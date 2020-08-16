@@ -1,0 +1,237 @@
+/* Делаю пока все во одном файле, позже по необходимости могу разделить на общий и постраничные файлы css */
+
+/* текст цвет основной #757575 */
+/* текст цвет заголовков #212121 */
+/* текст цвет акцент #2196F3 */
+/* текст цвет белый #FFFFFF*/
+/* фон основной белый #FFFFFF */
+/* фон серый  #F5F4FA */
+/* фон акцент #2196F3 */
+/* фон секции шапка, подвал #2F303A */
+/* цвета логотипа #000000  #2196F3 #FFFFFF */
+
+/* Шрифты: все normal
+/* Roboto 400, 500, 700, 900  */
+/* Raleway 700 */
+/* letter-spacing: 0.03em общий текст*/
+/* letter-spacing: 0.02em навигация  */
+/* letter-spacing: 0.06em секция шапки */
+:root {
+  --text-main: #757575;
+  --text-header: #212121;
+  --text-accent: #2196f3;
+  --text-white: #ffffff;
+  --text-adress: rgba(255, 255, 255, 0.6);
+  --bgd-primary: #ffffff;
+  --bgd-second: #f5f4fa;
+  --bgd-accent: #2196f3;
+  --bgd-header-footer: #2f303a;
+}
+/* Пока отдельно указала белый цвет  для фона и для текста */
+/* Разные переменные, если нужно будет поменять переменную цвета текста, не затронет цвет фона и наоборот */
+
+/* Общие параметры на страницах index.html, protfolio.html */
+.page-studio,
+.page-portfolio {
+  color: var(--text-main);
+  background-color: var(--text-white);
+
+  font-family: Roboto, sans-serif;
+}
+
+/* Параметры страницы Studio */
+.page-studio {
+  font-size: 14px;
+  font-style: normal;
+}
+
+/* Параметры логотипа */
+.logo {
+  color: var(--text-header);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+/* Форматируем логотип */
+.logo-part-one {
+  color: var(--text-accent);
+}
+
+.logo-part-two {
+  color: var(--text-white);
+}
+
+/* Параметры ссылок навигации по сайту */
+.page-nav .link {
+  color: var(--text-header);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+/* Параметры ссылок для обратной связи */
+.page-contacts .link {
+  color: var(--text-main);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+/*  hover и focus для списков навигации по сайту*/
+.page-nav .link:hover,
+.page-contacts .link:hover,
+.page-nav .link:focus,
+.page-contacts .link:focus {
+  color: var(--text-accent);
+}
+
+/* Убираем символы списка */
+.list {
+  list-style: none;
+}
+
+/* Параметры фона секций шапка и подвал */
+.section-header,
+.section-footer {
+  background: var(--bgd-header-footer);
+}
+
+/* Параметры заголовка h1 на странице Studio */
+.header-title {
+  color: var(--text-white);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Параметры кнопки */
+.header-button {
+  color: var(--text-white);
+  background-color: var(--bgd-accent);
+}
+
+/* Параметры заголовков h2 */
+.section-title {
+  color: var(--text-header);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+}
+
+/* Параметры заголовков h3 */
+.features-item {
+  color: var(--text-header);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.section.team {
+  background-color: var(--bgd-second);
+}
+/*Параметры заголовка под фото членов команды  */
+.team-caption {
+  color: var(--text-header);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+}
+/* Параметры для записи - должности члена команды */
+.team-position {
+  color: var(--text-main);
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+}
+
+/* Параметры для строк адреса */
+.adress-mail {
+  color: var(--text-white);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.adress-email,
+.adress-tel {
+  color: var(--text-adress);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
+
+/* Параметры кнопок фильтра для портфолио, явно не до конца разобралась с размором текста в кнопке*/
+.filter-button {
+  color: var(--text-header);
+  background-color: var(--bgd-second);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+  border: none;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--text-white);
+  background-color: var(--bgd-accent);
+}
+
+/*  Параметры заголовков работ в портфолио */
+.portfolio-title {
+  color: var(--text-header);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+/*  Параметры пунктов фильтров для портфолио */
+.filter-item {
+  color: var(--text-main);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
