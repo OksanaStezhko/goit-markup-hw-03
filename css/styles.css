@@ -45,6 +45,12 @@
   font-style: normal;
 }
 
+/* Параметры страницы Portfolio. Размер шрифта наследуется только ссылками в nav */
+.page-portfolio {
+  font-size: 14px;
+  font-style: normal;
+}
+
 /* Параметры логотипа */
 .logo {
   color: var(--text-header);
@@ -53,6 +59,8 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+
   text-decoration: none;
 }
 
@@ -65,34 +73,29 @@
   color: var(--text-white);
 }
 
-/* Параметры ссылок навигации по сайту */
-.page-nav .link {
-  color: var(--text-header);
-
+/* Общие параметры для всех ссылок класса link навигационного блока, этот класс для других ссылок использоваться не будет */
+.link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
   text-decoration: none;
+}
+
+/* Параметры ссылок навигации по сайту */
+.page-nav .link {
+  color: var(--text-header);
 }
 
 /* Параметры ссылок для обратной связи */
 .page-contacts .link {
   color: var(--text-main);
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  text-decoration: none;
 }
 
-/*  hover и focus для списков навигации по сайту*/
+/*  hover и focus для ссылок навигации по сайту*/
 .page-nav .link:hover,
-.page-contacts .link:hover,
 .page-nav .link:focus,
+.page-contacts .link:hover,
 .page-contacts .link:focus {
   color: var(--text-accent);
 }
@@ -103,13 +106,13 @@
 }
 
 /* Параметры фона секций шапка и подвал */
-.section-header,
-.section-footer {
+.primary,
+.footer {
   background: var(--bgd-header-footer);
 }
 
 /* Параметры заголовка h1 на странице Studio */
-.header-title {
+.primary-title {
   color: var(--text-white);
 
   font-weight: 900;
@@ -122,7 +125,7 @@
 }
 
 /* Параметры кнопки */
-.header-button {
+.primary-button {
   color: var(--text-white);
   background-color: var(--bgd-accent);
 }
@@ -149,7 +152,7 @@
   letter-spacing: 0.03em;
 }
 
-.section.team {
+.team {
   background-color: var(--bgd-second);
 }
 /*Параметры заголовка под фото членов команды  */
@@ -181,7 +184,6 @@
 
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -192,7 +194,6 @@
 
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
