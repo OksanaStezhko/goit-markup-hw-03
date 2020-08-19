@@ -31,24 +31,14 @@
 /* Разные переменные, если нужно будет поменять переменную цвета текста, не затронет цвет фона и наоборот */
 
 /* Общие параметры на страницах index.html, protfolio.html */
-.page-studio,
-.page-portfolio {
+.studio,
+.portfolio {
   color: var(--text-main);
   background-color: var(--text-white);
 
   font-family: Roboto, sans-serif;
-}
-
-/* Параметры страницы Studio */
-.page-studio {
-  font-size: 14px;
   font-style: normal;
-}
-
-/* Параметры страницы Portfolio. Размер шрифта наследуется только ссылками в nav */
-.page-portfolio {
   font-size: 14px;
-  font-style: normal;
 }
 
 /* Параметры логотипа */
@@ -83,20 +73,18 @@
 }
 
 /* Параметры ссылок навигации по сайту */
-.page-nav .link {
+.studio-nav .link {
   color: var(--text-header);
 }
 
 /* Параметры ссылок для обратной связи */
-.page-contacts .link {
+.studio-contacts .link {
   color: var(--text-main);
 }
 
 /*  hover и focus для ссылок навигации по сайту*/
-.page-nav .link:hover,
-.page-nav .link:focus,
-.page-contacts .link:hover,
-.page-contacts .link:focus {
+.link:hover,
+.link:focus {
   color: var(--text-accent);
 }
 
@@ -130,7 +118,7 @@
   background-color: var(--bgd-accent);
 }
 
-/* Параметры заголовков h2 */
+/* Параметры заголовков h2 страницы index.html*/
 .section-title {
   color: var(--text-header);
 
@@ -142,7 +130,7 @@
   text-align: center;
 }
 
-/* Параметры заголовков h3 */
+/* Параметры заголовков h3 страницы index.html */
 .features-item {
   color: var(--text-header);
 
@@ -200,7 +188,7 @@
   text-decoration: none;
 }
 
-/* Параметры кнопок фильтра для портфолио, явно не до конца разобралась с размором текста в кнопке*/
+/* Параметры кнопок фильтра для портфолио*/
 .filter-button {
   color: var(--text-header);
   background-color: var(--bgd-second);
@@ -235,4 +223,26 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+/* outline: 1px solid #666; */
+.header-box {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  background-color: tomato;
+}
+
+.portfolio-box {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: green;
+}
+
+.footer {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
