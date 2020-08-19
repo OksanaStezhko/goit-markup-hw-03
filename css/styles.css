@@ -139,6 +139,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
+/* Параметры параграфов секции features */
+.features.list {
+  line-height: 1.71;
+}
 
 .team {
   background-color: var(--bgd-second);
