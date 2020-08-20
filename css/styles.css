@@ -70,6 +70,7 @@
   letter-spacing: 0.02em;
 
   text-decoration: none;
+  display: inline-block;
 }
 
 /* Параметры ссылок навигации по сайту */
@@ -81,6 +82,12 @@
 .studio-contacts .link {
   color: var(--text-main);
 }
+.studio-contacts {
+  margin: 0px;
+}
+.studio-nav ul {
+  margin: 0px;
+}
 
 /*  hover и focus для ссылок навигации по сайту*/
 .link:hover,
@@ -91,6 +98,8 @@
 /* Убираем символы списка */
 .list {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Параметры фона секций шапка и подвал */
@@ -110,6 +119,7 @@
 
   text-align: center;
   text-transform: uppercase;
+  margin: 0px;
 }
 
 /* Параметры кнопки */
@@ -128,6 +138,7 @@
   letter-spacing: 0.03em;
 
   text-align: center;
+  margin: 0px;
 }
 
 /* Параметры заголовков h3 страницы index.html */
@@ -138,10 +149,14 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin: 0px;
 }
 /* Параметры параграфов секции features */
 .features.list {
   line-height: 1.71;
+}
+.features.list p {
+  margin: 0px;
 }
 
 .team {
@@ -157,6 +172,7 @@
   letter-spacing: 0.03em;
 
   text-align: center;
+  margin: 0px;
 }
 /* Параметры для записи - должности члена команды */
 .team-position {
@@ -168,6 +184,10 @@
   letter-spacing: 0.03em;
 
   text-align: center;
+  margin: 0px;
+}
+.team-list figure {
+  margin: 0px;
 }
 
 /* Параметры для строк адреса */
@@ -178,6 +198,7 @@
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin: 0px;
 }
 
 .adress-email,
@@ -249,4 +270,23 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/*////////////////// Для тестирования/////////////////////////////// */
+.studio-nav {
+  background-color: antiquewhite;
+}
+.studio-contacts {
+  background-color: rgb(168, 200, 202);
+}
+
+.features {
+  background-color: blanchedalmond;
+}
+.activity {
+  background-color: cornflowerblue;
+}
+
+.team {
+  background-color: rgb(224, 222, 215);
 }
