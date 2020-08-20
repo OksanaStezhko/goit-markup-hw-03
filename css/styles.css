@@ -39,6 +39,7 @@
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 /* Параметры логотипа */
@@ -49,7 +50,6 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 
   text-decoration: none;
 }
@@ -70,7 +70,6 @@
   letter-spacing: 0.02em;
 
   text-decoration: none;
-  display: inline-block;
 }
 
 /* Параметры ссылок навигации по сайту */
@@ -82,20 +81,17 @@
 .studio-contacts .link {
   color: var(--text-main);
 }
-.studio-contacts {
-  margin: 0px;
-}
-.studio-nav ul {
-  margin: 0px;
-}
 
 /*  hover и focus для ссылок навигации по сайту*/
+.link.current,
 .link:hover,
 .link:focus {
   color: var(--text-accent);
 }
 
-/* Убираем символы списка */
+/* Убираем символы списка, марджины и паддинги списков
+
+*/
 .list {
   list-style: none;
   margin: 0px;
@@ -106,6 +102,14 @@
 .primary,
 .footer {
   background: var(--bgd-header-footer);
+}
+
+.primary {
+  width: 1600px;
+  height: 600px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 /* Параметры заголовка h1 на странице Studio */
@@ -119,13 +123,17 @@
 
   text-align: center;
   text-transform: uppercase;
-  margin: 0px;
 }
 
 /* Параметры кнопки */
 .primary-button {
   color: var(--text-white);
   background-color: var(--bgd-accent);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
 }
 
 /* Параметры заголовков h2 страницы index.html*/
@@ -135,10 +143,6 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
-
-  text-align: center;
-  margin: 0px;
 }
 
 /* Параметры заголовков h3 страницы index.html */
@@ -148,17 +152,11 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
-  margin: 0px;
 }
 /* Параметры параграфов секции features */
 .features.list {
   line-height: 1.71;
 }
-.features.list p {
-  margin: 0px;
-}
-
 .team {
   background-color: var(--bgd-second);
 }
@@ -169,10 +167,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 
   text-align: center;
-  margin: 0px;
 }
 /* Параметры для записи - должности члена команды */
 .team-position {
@@ -181,13 +177,8 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 
   text-align: center;
-  margin: 0px;
-}
-.team-list figure {
-  margin: 0px;
 }
 
 /* Параметры для строк адреса */
@@ -197,8 +188,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin: 0px;
 }
 
 .adress-email,
@@ -208,8 +197,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-
   text-decoration: none;
 }
 
@@ -247,46 +234,37 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
 }
 
-/* outline: 1px solid #666; */
-.header-box {
+.header-box,
+.features,
+.activity {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
-  background-color: tomato;
+  background-color: aqua;
 }
 
 .portfolio-box {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: green;
+  background-color: aqua;
 }
 
 .footer {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0px;
 }
 
-/*////////////////// Для тестирования/////////////////////////////// */
-.studio-nav {
-  background-color: antiquewhite;
+/* Параметры конопок-фильтров в портфолио  */
+.filter-button {
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
-.studio-contacts {
-  background-color: rgb(168, 200, 202);
-}
-
-.features {
-  background-color: blanchedalmond;
-}
-.activity {
-  background-color: cornflowerblue;
-}
-
-.team {
-  background-color: rgb(224, 222, 215);
+.section-title {
+  margin: 0px;
 }
