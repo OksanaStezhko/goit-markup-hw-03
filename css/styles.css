@@ -34,7 +34,7 @@
 .studio,
 .portfolio {
   color: var(--text-main);
-  background-color: var(--text-white);
+  /* background-color: var(--text-white); */
 
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -104,6 +104,23 @@
   background: var(--bgd-header-footer);
 }
 
+.studio-nav,
+.studio-contacts,
+.features,
+.activity,
+.team-list,
+.portfolio-box {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px;
+}
+
+.team,
+.footer {
+  width: 1600px;
+  margin: 0px;
+}
 .primary {
   width: 1600px;
   height: 600px;
@@ -123,6 +140,7 @@
 
   text-align: center;
   text-transform: uppercase;
+  margin: 0px;
 }
 
 /* Параметры кнопки */
@@ -143,6 +161,8 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
+
+  margin: 0px;
 }
 
 /* Параметры заголовков h3 страницы index.html */
@@ -152,11 +172,17 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
+  margin: 0px;
 }
 /* Параметры параграфов секции features */
 .features.list {
   line-height: 1.71;
 }
+
+.features p {
+  margin: 0px;
+}
+
 .team {
   background-color: var(--bgd-second);
 }
@@ -181,6 +207,10 @@
   text-align: center;
 }
 
+.team figure,
+.team p {
+  margin: 0px;
+}
 /* Параметры для строк адреса */
 .adress-mail {
   color: var(--text-white);
@@ -200,6 +230,9 @@
   text-decoration: none;
 }
 
+.footer p {
+  margin: 0px;
+}
 /* Параметры кнопок фильтра для портфолио*/
 .filter-button {
   color: var(--text-header);
@@ -219,6 +252,13 @@
 }
 
 /*  Параметры заголовков работ в портфолио */
+
+.portfolio h1,
+.portfolio-item h2,
+.portfolio-item p {
+  margin: 0px;
+}
+
 .portfolio-title {
   color: var(--text-header);
 
@@ -227,6 +267,7 @@
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 /*  Параметры пунктов фильтров для портфолио */
 .filter-item {
   color: var(--text-main);
@@ -236,35 +277,40 @@
   line-height: 1.87;
 }
 
-.header-box,
-.features,
-.activity {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: aqua;
-}
-
-.portfolio-box {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: aqua;
-}
-
-.footer {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0px;
-}
-
 /* Параметры конопок-фильтров в портфолио  */
 .filter-button {
   display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
 }
-.section-title {
-  margin: 0px;
+
+/* ...........Для тестирования.................. */
+
+.studio-nav {
+  background-color: rgb(124, 182, 76);
+}
+
+.studio-contacts {
+  background-color: darksalmon;
+}
+
+.portfolio-box {
+  background-color: rgb(124, 182, 76);
+}
+
+.primary {
+  background-color: rgb(152, 165, 142);
+}
+.features {
+  background-color: rgb(166, 224, 226);
+}
+.activity {
+  background-color: rgb(78, 76, 182);
+}
+
+.team {
+  background-color: rgb(124, 182, 76);
+}
+.team-list {
+  background-color: gold;
 }
