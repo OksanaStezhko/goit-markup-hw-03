@@ -34,68 +34,10 @@
 .studio,
 .portfolio {
   color: var(--text-main);
-  /* background-color: var(--text-white); */
-
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
   letter-spacing: 0.03em;
-}
-
-/* Параметры логотипа */
-.logo {
-  color: var(--text-header);
-
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
-  text-decoration: none;
-}
-
-/* Форматируем логотип */
-.logo-part-one {
-  color: var(--text-accent);
-}
-
-.logo-part-two {
-  color: var(--text-white);
-}
-
-/* Общие параметры для всех ссылок класса link навигационного блока, этот класс для других ссылок использоваться не будет */
-.link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  text-decoration: none;
-}
-
-/* Параметры ссылок навигации по сайту */
-.studio-nav .link {
-  color: var(--text-header);
-}
-
-/* Параметры ссылок для обратной связи */
-.studio-contacts .link {
-  color: var(--text-main);
-}
-
-/*  hover и focus для ссылок навигации по сайту*/
-.link.current,
-.link:hover,
-.link:focus {
-  color: var(--text-accent);
-}
-
-/* Убираем символы списка, марджины и паддинги списков
-
-*/
-.list {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
 }
 
 /* Параметры фона секций шапка и подвал */
@@ -104,19 +46,20 @@
   background: var(--bgd-header-footer);
 }
 
-.features,
-.activity,
-.portfolio-box {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.container {
-  width: 1600px;
-}
-.studio-nav,
-.studio-contacts {
+.studio-nav .studio-contacts,
+.features p,
+.footer p,
+.primary-title,
+.list,
+.portfolio h1,
+.portfolio-item h2,
+.portfolio-item p {
   margin: 0px;
 }
 
@@ -130,6 +73,79 @@
 .footer {
   width: 1600px;
 }
+
+/* Убираем символы списка, марджины и паддинги списков*/
+.list {
+  list-style: none;
+  padding: 0px;
+}
+
+/* Параметры заголовков h2 страницы index.html*/
+.section-title {
+  color: var(--text-header);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  margin: 0px 0px 50px;
+}
+.link,
+.logo,
+.primary-button,
+.adress-email,
+.adress-tel {
+  text-decoration: none;
+}
+
+.section-title,
+.studio-list-item,
+.studio-contacts-item,
+.features-card,
+.features-item,
+.activity-card,
+.team-card,
+.team p,
+.portfolio-card,
+.filter-button {
+  display: inline-block;
+}
+/* Параметры логотипа */
+.logo {
+  color: var(--text-header);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/* Форматируем логотип */
+.logo-part-one {
+  color: var(--text-accent);
+}
+
+.logo-part-two {
+  color: var(--text-white);
+}
+
+/* Параметры ссылок навигации по сайту */
+.studio-list-item .link {
+  color: var(--text-header);
+}
+
+/* Параметры ссылок для обратной связи */
+.studio-contacts-item .link {
+  color: var(--text-main);
+}
+.studio-list-item.link,
+.studio-contacts-item.link {
+  letter-spacing: 0.02em;
+}
+
+/*  hover и focus для ссылок навигации по сайту*/
+.link.current,
+.link:hover,
+.link:focus {
+  color: var(--text-accent);
+}
 .primary {
   width: 1600px;
   margin-top: 0px;
@@ -137,22 +153,15 @@
   text-align: center;
 }
 
-.portfolio-filter {
-  margin-bottom: 34px;
-}
-
 /* Параметры заголовка h1 на странице Studio */
 .primary-title {
   color: var(--text-white);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-
   text-align: center;
   text-transform: uppercase;
-  margin: 0px;
 }
 
 /* Параметры кнопки */
@@ -163,41 +172,29 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-decoration: none;
-}
-
-/* Параметры заголовков h2 страницы index.html*/
-.section-title {
-  color: var(--text-header);
-
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  display: inline-block;
-  margin: 0px 0px 50px;
 }
 
 /* Параметры заголовков h3 страницы index.html */
 .features-item {
   color: var(--text-header);
-
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  display: inline-block;
   margin: 0px 0px 10px;
 }
+
 /* Параметры параграфов секции features */
-.features.list {
+.features.list,
+.features p {
   line-height: 1.71;
 }
 
-.features p {
-  margin: 0px;
+.features-card {
+  width: 270px;
+  height: 101px;
 }
 
 .activity-card {
-  display: inline-block;
   width: 370px;
   height: 294px;
 }
@@ -207,7 +204,6 @@
 }
 
 .team-card {
-  display: inline-block;
   width: 270px;
   height: 368px;
   text-align: center;
@@ -215,18 +211,15 @@
 /*Параметры заголовка под фото членов команды  */
 .team-caption {
   color: var(--text-header);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-
   margin: 0px 0px 10px;
 }
 
 /* Параметры для записи - должности члена команды */
 .team-position {
   color: var(--text-main);
-
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -235,14 +228,13 @@
 .team p {
   margin: 0px 0px 30px;
 }
-
-.team p {
-  display: inline-block;
+.team-card img {
+  margin-bottom: 30px;
 }
+
 /* Параметры для строк адреса */
 .adress-mail {
   color: var(--text-white);
-
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
@@ -251,16 +243,11 @@
 .adress-email,
 .adress-tel {
   color: var(--text-adress);
-
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-  text-decoration: none;
 }
 
-.footer p {
-  margin: 0px;
-}
 .footer-logo {
   margin: 0px 0px 20px 0px;
 }
@@ -272,7 +259,6 @@
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-
   text-align: center;
   border: none;
 }
@@ -282,16 +268,12 @@
   background-color: var(--bgd-accent);
 }
 
+.portfolio-filter {
+  margin-bottom: 34px;
+}
 /*  Параметры заголовков работ в портфолио */
 
-.portfolio h1,
-.portfolio-item h2,
-.portfolio-item p {
-  margin: 0px;
-}
-
 .portfolio-card {
-  display: inline-block;
   width: 370px;
   height: 404px;
   text-align: center;
@@ -299,7 +281,6 @@
 
 .portfolio-title {
   color: var(--text-header);
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -309,7 +290,6 @@
 /*  Параметры пунктов фильтров для портфолио */
 .filter-item {
   color: var(--text-main);
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -317,38 +297,8 @@
 
 /* Параметры конопок-фильтров в портфолио  */
 .filter-button {
-  display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
 }
 
 /* ...........Для тестирования.................. */
-
-.studio-nav {
-  background-color: rgb(124, 182, 76);
-}
-
-.studio-contacts {
-  background-color: darksalmon;
-}
-
-.portfolio-box {
-  background-color: rgb(124, 182, 76);
-}
-
-.primary {
-  background-color: rgb(152, 165, 142);
-}
-.features {
-  background-color: rgb(166, 224, 226);
-}
-.activity {
-  background-color: rgb(78, 76, 182);
-}
-
-.team {
-  background-color: rgb(124, 182, 76);
-}
-.team-list {
-  background-color: gold;
-}
