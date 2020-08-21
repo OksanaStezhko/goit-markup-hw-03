@@ -31,8 +31,8 @@
 /* Разные переменные, если нужно будет поменять переменную цвета текста, не затронет цвет фона и наоборот */
 
 /* Общие параметры на страницах index.html, protfolio.html */
-.studio,
-.portfolio {
+.studio-page,
+.portfolio-page {
   color: var(--text-main);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -64,9 +64,10 @@
 }
 
 .features,
-.activity,
-.portfolio-box {
-  margin: 94px 0px;
+.team,
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team,
@@ -135,8 +136,8 @@
 .studio-contacts-item .link {
   color: var(--text-main);
 }
-.studio-list-item.link,
-.studio-contacts-item.link {
+.studio-list-item .link,
+.studio-contacts-item .link {
   letter-spacing: 0.02em;
 }
 
@@ -172,6 +173,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
 /* Параметры заголовков h3 страницы index.html */
