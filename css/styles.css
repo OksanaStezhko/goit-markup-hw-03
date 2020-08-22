@@ -38,8 +38,9 @@
   padding: 0px;
 }
 
-.studio-nav .studio-contacts,
-.section-features p,
+.studio-nav,
+.studio-contacts,
+.features-text,
 .footer-adress,
 .primary-title,
 .list,
@@ -101,6 +102,7 @@
   text-align: center;
 }
 .section-activity {
+  padding-bottom: 94px;
   text-align: center;
 }
 /* Пока не знаю как скрыть заголовок h1 в секции section-portfolio, ставлю на 24px (высота заголовка h1) меньше верхний паддинг */
@@ -180,8 +182,8 @@
 .studio-contacts-item .link {
   color: var(--text-main);
 }
-.studio-list-item .link,
-.studio-contacts-item .link {
+.studio-list,
+.studio-contacts {
   letter-spacing: 0.02em;
 }
 
@@ -207,6 +209,7 @@
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 /* Параметры кнопки */
@@ -240,8 +243,7 @@
 }
 
 /* Параметры параграфов секции section-features */
-.section-features.list,
-.section-features p {
+.features-list {
   line-height: 1.71;
 }
 
@@ -327,11 +329,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-}
-
-.container .footer {
-  display: flex;
-  justify-content: flex-start;
 }
 
 .section-footer {
