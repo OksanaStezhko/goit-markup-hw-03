@@ -32,6 +32,23 @@
 
 /* Общие параметры на страницах index.html, protfolio.html */
 
+/* Убираем символы списка и паддинги списков*/
+.list {
+  list-style: none;
+  padding: 0px;
+}
+
+.studio-nav .studio-contacts,
+.features p,
+.footer p,
+.primary-title,
+.list,
+.section-portfolio h1,
+.portfolio-title,
+.filter-item {
+  margin: 0px;
+}
+
 .container,
 .studio-nav,
 .studio-list,
@@ -48,6 +65,41 @@
   margin-right: auto;
   outline: 2px solid tomato !important;
 }
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-filter,
+.portfolio-item {
+  display: flex;
+  flex-direction: row;
+}
+.portfolio-item {
+  flex-wrap: wrap;
+}
+
+.portfolio-filter {
+  padding-bottom: 16px;
+  margin-bottom: 34px;
+}
+
+.filter-button {
+  margin-right: 8px;
+  align-items: flex-start;
+}
+
+.portfolio-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.portfolio-card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.portfolio-card {
+  flex-basis: calc((100%- 2 * 30px) / 3);
+}
+
 .studio-header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -68,25 +120,17 @@
   background: var(--bgd-header-footer);
 }
 
-.studio-nav .studio-contacts,
-.features p,
-.footer p,
-.primary-title,
-.list,
-.portfolio h1,
-.portfolio-item h2,
-.portfolio-item p {
-  margin: 0px;
-}
-
 /* Задаем паддинги для секций, у которых они есть */
 .features,
 .team,
-.portfolio {
-  padding-top: 94px;
+.section-portfolio {
+  /* Пока не знаю как скрыть заголовок h1 в секции, ставлю на 24px (высота заголовка h1) меньше верхний паддинг */
+  /* так как расстояние между секциями должно быть 94px */
+  padding-top: 70px;
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 /* Задаем ширину секций, имеющих больший размер, чем основной у контейнеров: Шапка,Подвал и Наша команда  */
 .primary,
@@ -95,12 +139,6 @@
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Убираем символы списка и паддинги списков*/
-.list {
-  list-style: none;
-  padding: 0px;
 }
 
 .logo {
@@ -136,9 +174,7 @@
 .features-item,
 .activity-card,
 .team-card,
-.team p,
-.portfolio-card,
-.filter-button {
+.team p {
   display: inline-block;
 }
 /* Параметры логотипа */
@@ -302,16 +338,13 @@
   background-color: var(--bgd-accent);
 }
 
-.portfolio-filter {
-  margin-bottom: 34px;
-}
-/*  Параметры заголовков работ в портфолио */
+/* Параметры заголовков работ в портфолио
 
 .portfolio-card {
   width: 370px;
   height: 404px;
   text-align: center;
-}
+} */
 
 .portfolio-title {
   color: var(--text-header);
@@ -319,6 +352,8 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 /*  Параметры пунктов фильтров для портфолио */
@@ -327,6 +362,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  margin-bottom: 20px;
 }
 
 /* Параметры конопок-фильтров в портфолио  */
