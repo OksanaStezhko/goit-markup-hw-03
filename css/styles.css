@@ -31,6 +31,28 @@
 /* Разные переменные, если нужно будет поменять переменную цвета текста, не затронет цвет фона и наоборот */
 
 /* Общие параметры на страницах index.html, protfolio.html */
+
+.container,
+.studio-nav,
+.studio-list,
+.studio-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato !important;
+}
+.studio-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .studio-page,
 .portfolio-page {
   color: var(--text-main);
@@ -46,12 +68,6 @@
   background: var(--bgd-header-footer);
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .studio-nav .studio-contacts,
 .features p,
 .footer p,
@@ -63,22 +79,41 @@
   margin: 0px;
 }
 
+/* Задаем паддинги для секций, у которых они есть */
 .features,
 .team,
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
+/* Задаем ширину секций, имеющих больший размер, чем основной у контейнеров: Шапка,Подвал и Наша команда  */
+.primary,
 .team,
 .footer {
   width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Убираем символы списка, марджины и паддинги списков*/
+/* Убираем символы списка и паддинги списков*/
 .list {
   list-style: none;
   padding: 0px;
+}
+
+.logo {
+  margin-right: 93px;
+}
+
+.studio-contacts {
+  margin-left: auto;
+}
+
+.studio-list-item:not(:last-child),
+.studio-contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 /* Параметры заголовков h2 страницы index.html*/
@@ -97,9 +132,6 @@
   text-decoration: none;
 }
 
-.section-title,
-.studio-list-item,
-.studio-contacts-item,
 .features-card,
 .features-item,
 .activity-card,
@@ -147,8 +179,8 @@
 .link:focus {
   color: var(--text-accent);
 }
+
 .primary {
-  width: 1600px;
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
