@@ -198,6 +198,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
+  padding: 200px 452px;
 }
 
 /* Параметры заголовка h1 на странице Studio */
@@ -215,12 +216,15 @@
 /* Параметры кнопки */
 .primary-button {
   color: var(--text-white);
-  background-color: var(--bgd-accent);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--bgd-accent);
 }
 
 .features-list {
@@ -373,7 +377,7 @@
 .portfolio-card {
   flex-basis: calc((100%- 2 * 30px) / 3);
 }
-
+/* Параметры конопок-фильтров в портфолио  */
 .filter-button {
   color: var(--text-header);
   background-color: var(--bgd-second);
@@ -383,6 +387,8 @@
   letter-spacing: 0.03em;
   text-align: center;
   border: none;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -410,12 +416,6 @@
   font-size: 16px;
   line-height: 1.87;
   margin-bottom: 20px;
-}
-
-/* Параметры конопок-фильтров в портфолио  */
-.filter-button {
-  padding: 6px 22px;
-  border-radius: 4px;
 }
 
 /* ...........Для тестирования.................. */
