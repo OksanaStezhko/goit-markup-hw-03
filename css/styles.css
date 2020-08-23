@@ -38,10 +38,12 @@
   padding: 0px;
 }
 
+/* Убираем марджины у списков, заголовков, ссылках, адресах */
 .studio-nav,
 .studio-contacts,
 .features-text,
 .footer-adress,
+.adress-mail,
 .primary-title,
 .list,
 .features-item,
@@ -59,6 +61,7 @@
 .studio-contacts {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .container {
@@ -71,6 +74,10 @@
   outline: 2px solid tomato !important;
 }
 
+.container .section-footer {
+  padding-top: 60px;
+  padding-left: 60px;
+}
 .studio-header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -125,12 +132,8 @@
   margin-right: auto;
 }
 
-.logo {
+.studio-nav .logo {
   margin-right: 93px;
-}
-
-.studio-contacts {
-  margin-left: auto;
 }
 
 .studio-list-item:not(:last-child),
@@ -319,30 +322,38 @@
   margin-bottom: 30px;
 }
 
+/* Футтер пока не делаю флексом, пока нет остального конента в нем */
 /* Параметры для строк адреса */
 .adress-mail {
   color: var(--text-white);
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
+  margin-bottom: 9px;
 }
 
 .adress-email,
 .adress-tel {
+  display: block;
   color: var(--text-adress);
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
 }
 
+.adress-email {
+  margin-bottom: 9px;
+}
+
 .section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-logo {
-  margin: 0px 0px 20px 0px;
+
+.section-footer .logo {
+  display: block;
+  margin-bottom: 20px;
 }
-/* Параметры кнопок фильтра для портфолио*/
 
 .portfolio-filter,
 .portfolio-item {
