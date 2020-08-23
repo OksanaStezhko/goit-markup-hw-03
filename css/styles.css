@@ -25,6 +25,7 @@
   --bgd-primary: #ffffff;
   --bgd-second: #f5f4fa;
   --bgd-accent: #2196f3;
+  --bgd-border: #eeeeee;
   --bgd-header-footer: #2f303a;
 }
 /* Пока отдельно указала белый цвет  для фона и для текста */
@@ -417,7 +418,6 @@
 }
 
 .portfolio-title {
-  margin-top: 20px;
   margin-bottom: 4px;
 
   color: var(--text-header);
@@ -430,10 +430,19 @@
   color: var(--text-white);
 }
 
+/* Делаю бордер для части карточки */
+.portfolio-card-caption {
+  padding: 20px 24px;
+  border-right: 1px solid var(--bgd-border);
+  border-bottom: 1px solid var(--bgd-border);
+  border-left: 1px solid var(--bgd-border);
+
+  text-align: left;
+  /* outline: 2px solid red !important; */
+}
+
 /*  Параметры пунктов фильтров для портфолио */
 .filter-item {
-  margin-bottom: 20px;
-
   color: var(--text-main);
   font-weight: 400;
   font-size: 16px;
