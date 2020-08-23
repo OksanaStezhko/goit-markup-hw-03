@@ -34,6 +34,13 @@
 
 /* Общие параметры на страницах index.html, protfolio.html */
 
+/* Убираем у всех img специфические зазоры */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Убираем символы списка и паддинги списков*/
 .list {
   list-style: none;
@@ -243,6 +250,7 @@
 
 .features-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .section-features .section-title {
@@ -272,23 +280,17 @@
   text-align: start;
 }
 
-.features-card:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
-
 .activity-list {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 .section-activity .section-title {
   margin-bottom: 50px;
 }
-.activity-card:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
 .activity-card {
-  flex-basis: calc((100%-2 * 30) / 3);
+  width: 370px;
+  height: 294px;
 }
 
 .section-team {
@@ -296,19 +298,19 @@
 }
 .team-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .section-team .section-title {
   margin-bottom: 50px;
-}
-.team-card:not(:nth-child(4n)) {
-  margin-right: 30px;
 }
 
 .team-card {
   width: 270px;
   height: 368px;
   text-align: center;
+  background-color: var(--bgd-primary);
+  border-radius: 0px 0px 4px 4px;
 }
 /*Параметры заголовка под фото членов команды  */
 .team-caption {
@@ -322,16 +324,15 @@
 
 /* Параметры для записи - должности члена команды */
 .team-position {
-  margin-bottom: 30px;
-
   color: var(--text-main);
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.team-card img {
-  margin-bottom: 30px;
+.team-card-caption {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Футтер пока не делаю флексом, пока нет остального конента в нем */
