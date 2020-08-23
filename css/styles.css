@@ -362,11 +362,6 @@
   margin-left: auto;
 }
 
-.filter-button {
-  margin-right: 8px;
-  align-items: flex-start;
-}
-
 .portfolio-card:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -379,6 +374,7 @@
 }
 /* Параметры конопок-фильтров в портфолио  */
 .filter-button {
+  align-items: flex-start;
   color: var(--text-header);
   background-color: var(--bgd-second);
   font-weight: 500;
@@ -387,8 +383,9 @@
   letter-spacing: 0.03em;
   text-align: center;
   border: none;
-  padding: 6px 22px;
   border-radius: 4px;
+  margin-right: 8px;
+  padding: 6px 22px;
 }
 .filter-button:hover,
 .filter-button:focus {
