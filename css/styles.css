@@ -64,15 +64,22 @@ img {
   margin: 0px;
 }
 
+/* Параметры для контейнеров верхней линии */
 .container.studio-header,
 .studio-nav,
 .studio-list,
-.studio-contacts {
+.studio-contacts,
+.features-list,
+.team-list,
+.activity-list,
+.portfolio-filter,
+.portfolio-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+/* Параметры основного контейнера макета */
 .container {
   width: 1200px;
   margin-left: auto;
@@ -83,15 +90,19 @@ img {
   /* outline: 2px solid tomato !important; */
 }
 
+/* Доп.параметры для контейнера футтера */
 .container .section-footer {
   padding-top: 60px;
   padding-left: 60px;
 }
+
+/* Доп.параметры для контейнера шапки */
 .studio-header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
+/* Общие параметры для страниц index и portfolio */
 .studio-page,
 .portfolio-page {
   font-family: Roboto, sans-serif;
@@ -107,7 +118,7 @@ img {
   background: var(--bgd-header-footer);
 }
 
-/* Задаем паддинги для секций, у которых они есть */
+/* Паддинги и марджины для секций, у которых они есть: Особенности, Наша команда, Портфолио */
 .section-features,
 .section-team,
 .section-portfolio {
@@ -118,23 +129,25 @@ img {
 
   text-align: center;
 }
+
+/* Паддинг секции "Чем мы занимаемся" */
 .section-activity {
   padding-bottom: 94px;
   text-align: center;
 }
-/* Пока не знаю как скрыть заголовок h1 в секции section-portfolio, ставлю на 24px (высота заголовка h1) меньше верхний паддинг */
-/* так как расстояние между секциями должно быть 94px */
+/* Пока не знаю как правильно скрыть заголовок h1 в секции section-portfolio, ставлю на 24px (высота заголовка h1) меньше верхний паддинг */
+/* так как расстояние между секциями должно быть 94px и делаю цвет таких загоовков в цвет фона */
 .section-portfolio {
   padding-top: 70px;
   border-top: 1px solid var(--bgd-line);
 }
 /* Пока не знаю как скрыть заголовок h2 в секции section-features, ставлю на 41px (высота заголовка h1) меньше верхний паддинг */
-/* так как расстояние между секциями должно быть 94px */
+/* так как расстояние между секциями должно быть 94px  и делаю цвет таких загоовков в цвет фона */
 .section-features {
   padding-top: 53px;
 }
 
-/* Задаем ширину секций, имеющих больший размер, чем основной у контейнеров: Шапка,Подвал и Наша команда  */
+/* Задаем ширину секций, имеющих больший размер, чем основной у контейнеров: Шапка, Подвал и Наша команда  */
 .section-primary,
 .section-team,
 .section-footer,
@@ -144,10 +157,12 @@ img {
   margin-right: auto;
 }
 
+/* Правый марджин между логотипом и ссылками на страницы в основном nav */
 .studio-nav .logo {
   margin-right: 93px;
 }
 
+/* Правые марджины внутри списков из nav и списка контактов */
 .studio-list-item:not(:last-child),
 .studio-contacts-item:not(:last-child) {
   margin-right: 50px;
@@ -163,6 +178,7 @@ img {
   line-height: 1.16;
 }
 
+/* Убираю подчеркивания под ссылками */
 .link,
 .logo,
 .primary-button,
@@ -180,11 +196,12 @@ img {
   line-height: 1.19;
 }
 
-/* Форматируем логотип */
+/* Цвет первой части логотипа */
 .logo-part-one {
   color: var(--text-accent);
 }
 
+/* Цвет второй части логотипа для футтера */
 .logo-part-two {
   color: var(--text-white);
 }
@@ -198,6 +215,8 @@ img {
 .studio-contacts-item .link {
   color: var(--text-main);
 }
+
+/* Общие параметры для двух списков верхней линии */
 .studio-list,
 .studio-contacts {
   letter-spacing: 0.02em;
@@ -210,6 +229,7 @@ img {
   color: var(--text-accent);
 }
 
+/* Параметры секции Шапка */
 .section-primary {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -232,7 +252,7 @@ img {
   text-transform: uppercase;
 }
 
-/* Параметры кнопки */
+/* Параметры кнопки в секции Шапка*/
 .primary-button {
   padding: 10px 32px;
 
@@ -248,14 +268,9 @@ img {
   background-color: var(--bgd-accent);
 }
 
-.features-list {
-  display: flex;
-  justify-content: space-between;
-}
-
+/* Параметры заголовка в секции Особенности */
 .section-features .section-title {
   margin: 0px;
-
   color: var(--text-white);
 }
 
@@ -270,41 +285,46 @@ img {
   text-transform: uppercase;
 }
 
-/* Параметры параграфов секции section-features */
-.features-list {
+/* Параметры пункта списка Особенности */
+.features-card {
+  width: 270px;
+  text-align: start;
   line-height: 1.71;
 }
 
-.features-card {
-  flex-basis: calc((100%-3 * 30) / 4);
-  text-align: start;
+/* Параметры списка секции Чем мы занимаемся */
+.activity-list {
+  align-items: flex-end;
 }
 
-.activity-list {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
+/* Параметры заголовка в секции Чем мы занимаемся */
 .section-activity .section-title {
   margin-bottom: 50px;
 }
+
+/* Параметры пункта списка  в секции Чем мы занимаемся */
 .activity-card {
   width: 370px;
   height: 294px;
 }
 
+/* Параметры секции Наша команда */
 .section-team {
   background-color: var(--bgd-second);
 }
-.team-list {
-  display: flex;
-  justify-content: space-between;
-}
 
+/* Параметры заголовка в секции Наша команда */
 .section-team .section-title {
   margin-bottom: 50px;
 }
 
+/* Контейнер для подписей в пунктах - карточках Наша команда */
+.team-card-caption {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Параметры пунктов в списке секции Наша команда */
 .team-card {
   width: 270px;
   height: 368px;
@@ -312,6 +332,7 @@ img {
   background-color: var(--bgd-primary);
   border-radius: 0px 0px 4px 4px;
 }
+
 /*Параметры заголовка под фото членов команды  */
 .team-caption {
   margin-bottom: 10px;
@@ -328,11 +349,6 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
-}
-
-.team-card-caption {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 /* Футтер пока не делаю флексом, пока нет остального конента в нем */
@@ -359,7 +375,7 @@ img {
 .adress-email {
   margin-bottom: 9px;
 }
-
+/* Паддинг для футтера */
 .section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -370,17 +386,17 @@ img {
   margin-bottom: 20px;
 }
 
-.portfolio-filter,
-.portfolio-item {
-  display: flex;
-}
+/* Параметры для страницы портфолио */
 .portfolio-filter {
   justify-content: center;
 }
+
+/* Делаю многострочный флекс-контейнер */
 .portfolio-item {
   flex-wrap: wrap;
 }
 
+/* Марджины и паддинги для пунктов списка фильтров в верхней части секции Портфолио*/
 .portfolio-filter {
   margin-bottom: 34px;
   margin-right: auto;
@@ -388,6 +404,7 @@ img {
   padding-bottom: 16px;
 }
 
+/* Марджины для сетки многострочного контейнера */
 .portfolio-card:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -395,9 +412,12 @@ img {
   margin-bottom: 30px;
 }
 
+/* Отностительные размеры для пуктов контейнера */
 .portfolio-card {
-  flex-basis: calc((100%- 2 * 30px) / 3);
+  /* flex-basis: calc((100%- 2 * 30px) / 3); */
+  width: 370px;
 }
+
 /* Параметры конопок-фильтров в портфолио  */
 .filter-button {
   align-items: flex-start;
@@ -415,12 +435,14 @@ img {
   border: none;
   border-radius: 4px;
 }
+
 .filter-button:hover,
 .filter-button:focus {
   color: var(--text-white);
   background-color: var(--bgd-accent);
 }
 
+/* Заголовки под карточками в списке Портфолио */
 .portfolio-title {
   margin-bottom: 4px;
 
@@ -430,6 +452,8 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
+/* Скрываем заголовок секции Портфолио цветом в фон */
 .section-portfolio h1 {
   color: var(--text-white);
 }
