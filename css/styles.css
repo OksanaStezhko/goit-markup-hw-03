@@ -387,6 +387,7 @@ img {
 .section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: start;
 }
 
 .section-footer .logo {
